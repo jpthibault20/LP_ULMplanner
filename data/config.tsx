@@ -19,6 +19,7 @@ const siteConfig = {
         label: 'Suivre le projet',
         href: '/waitlist',
         variant: 'primary',
+        id: "1",
       },
     ],
   },
