@@ -1,30 +1,24 @@
 import * as React from 'react'
 
 const faq = {
-  title: 'Frequently asked questions',
+  title: 'Questions fréquemment posées',
   // description: '',
   items: [
     {
-      q: 'How many products can I use Saas UI Pro for?',
-      a: (
-        <>
-          The single license can be used for one commercial application or SaaS
-          product and unlimited internal tools. You can buy as many licenses as
-          you need. <br /> The unlimited license does not have any restrictions.
-        </>
-      ),
+      q: "Quand l'application sera-t-elle disponible ?",
+      a: "Nous sommes en pleine phase de développement, concentrés sur la création d'une application qui répondra parfaitement à vos besoins. Bien que nous ne puissions pas encore préciser une date de lancement, nous vous encourageons à vous inscrire dès maintenant sur notre liste d'attente. Vous serez parmi les premiers informés lorsque nous serons prêts à lancer notre solution innovante !",
     },
     {
-      q: 'Can I use Saas UI Pro for client work?',
-      a: "Yes, that's totally up to you, as long as it fits the license you purchase.",
+      q: "Comment puis-je participer à l'élaboration de l'application ?",
+      a: "Vous pouvez contribuer en remplissant notre questionnaire en ligne. Vos retours nous aideront à peaufiner les fonctionnalités de l'application pour mieux répondre à vos besoins. En participant, vous aurez également la chance de recevoir des récompenses exclusives une fois le produit lancé.",
     },
     {
-      q: 'Can I use Saas UI Pro for Open Source projects?',
-      a: 'No currently not. A large part of Saas UI is already released under MIT license. We try to give back to the community as much as possible.',
+      q: " Quels types de paiements l'application supportera-t-elle ?",
+      a: "Notre application intégrera un système de paiement sécurisé qui acceptera diverses méthodes, y compris les cartes de crédit, les paiements en ligne, et potentiellement d'autres options comme les virements bancaires. Nous visons à offrir une solution de paiement fluide et sécurisée pour toutes vos transactions liées aux réservations et aux abonnements.",
     },
     {
-      q: 'Does Saas UI include Figma, Sketch or other design files?',
-      a: 'No, Saas UI does not include any design assets. Maintaining design resources costs a lot of extra effort. We believe small teams can move much faster by designing directly in code, with help of Storybooks.',
+      q: "L'application sera-t-elle accessible sur mobile ?",
+      a: "Oui, notre application sera entièrement compatible avec les appareils mobiles. Vous pourrez accéder à toutes les fonctionnalités clés depuis votre smartphone ou tablette, ce qui vous permettra de gérer les réservations, suivre les disponibilités et communiquer avec les membres du club, où que vous soyez.",
     },
   ],
 }

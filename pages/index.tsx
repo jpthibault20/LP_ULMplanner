@@ -29,11 +29,13 @@ import {
   FiArrowRight,
   FiBox,
   FiCheck,
+  FiClock,
   FiCode,
   FiCopy,
   FiFlag,
   FiGrid,
   FiLock,
+  FiMessageSquare,
   FiSearch,
   FiSliders,
   FiSmile,
@@ -43,8 +45,10 @@ import {
   FiTrendingUp,
   FiUserPlus,
 } from "react-icons/fi";
-import { FaCalendarAlt, FaPlane } from "react-icons/fa";
+import { VscGraphLine } from "react-icons/vsc";
+import { FaCalendar, FaCalendarAlt, FaHistory, FaMobile, FaMoneyBill, FaPlane, FaPlaneArrival, FaTimes, FaTimesCircle } from "react-icons/fa";
 import { IoMdSchool } from "react-icons/io";
+import { GiNotebook } from "react-icons/gi";
 import { FaMoneyBill1Wave } from "react-icons/fa6";
 import { Features } from "components/features";
 import { BackgroundGradient } from "components/gradients/background-gradient";
@@ -101,12 +105,12 @@ const HeroSection: React.FC = () => {
             title={
               <FallInPlace>
                 Gérez votre
-                <Br /> base ULM facilement
+                <Br /> Aéro-club facilement
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Une application dédiée aux clubs ULM pour simplifier les réservations, la gestion des instructeurs, des élèves, et des locations
+                Une application dédiée aux aéro-club pour simplifier les réservations, la gestion des instructeurs, des élèves, et des locations
 
               </FallInPlace>
             }
@@ -157,9 +161,9 @@ const HeroSection: React.FC = () => {
         pt="32"
         features={[
           {
-            title: "Location ULM",
+            title: "Location",
             icon: FaPlane,
-            description: "Gérez facilement la location d'ULM avec notre service intuitif : planifiez, suivez les réservations, et facilitez les paiements en toute simplicité",
+            description: "Gérez facilement la location de vos machinesavec notre service intuitif : planifiez, suivez les réservations, et facilitez les paiements en toute simplicité",
             iconPosition: "left",
             delay: 0.6,
           },
@@ -175,7 +179,7 @@ const HeroSection: React.FC = () => {
             title: "Paiment intégré",
             icon: FaMoneyBill1Wave,
             description:
-              "Simplifiez les transactions avec notre système de paiement intégré : réservez, payez, et gérez vos activités ULM en toute sécurité et transparence.",
+              "Simplifiez les transactions avec notre système de paiement intégré : réservez, payez, et gérez vos activités en toute sécurité et transparence.",
             iconPosition: "left",
             delay: 1,
           },
@@ -199,13 +203,10 @@ const HighlightsSection = () => {
 
   return (
     <Highlights>
-      <HighlightsItem colSpan={[1, null, 2]} title="Core components">
+      <HighlightsItem colSpan={[1, null, 2]} title="Participez à notre développement et soyez récompensé !">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started for free with <Em>30+ open source components</Em>.
-            Including authentication screens with Clerk, Supabase and Magic.
-            Fully functional forms with React Hook Form. Data tables with React
-            Table.
+          Nous sommes en pleine phase de développement de notre application dédiée aux éro-club. À ce stade, nous n’avons pas encore de produit final à proposer, mais votre avis est essentiel pour créer une solution qui répond à vos besoins. En participant à notre enquête, vous contribuez à façonner notre outil et, en remerciement, vous recevrez des récompenses exclusives une fois l’application lancée !<br />  Cliquez sur le lien ci-dessous pour répondre à notre questionnaire et partager vos idées
           </Text>
 
           <Flex
@@ -214,57 +215,42 @@ const HighlightsSection = () => {
             flexDirection="row"
             alignItems="center"
             py="1"
-            ps="8"
-            pe="2"
+            px="8"
             bg="primary.900"
             _dark={{ bg: "gray.900" }}
+            cursor="pointer"
+            onClick={() => window.location.href = 'https://forms.gle/4NxghHNWCuQwWuwPA'}
           >
             <Box>
               <Text color="yellow.400" display="inline">
-                yarn add
+                Lien de notre questionnaire
               </Text>{" "}
-              <Text color="cyan.300" display="inline">
-                @saas-ui/react
-              </Text>
             </Box>
-            <IconButton
-              icon={hasCopied ? <FiCheck /> : <FiCopy />}
-              aria-label="Copy install command"
-              onClick={onCopy}
-              variant="ghost"
-              ms="4"
-              isRound
-              color="white"
-            />
+            
           </Flex>
         </VStack>
       </HighlightsItem>
-      <HighlightsItem title="Solid foundations">
+      <HighlightsItem title="Notre vision pour les aéro-club">
         <Text color="muted" fontSize="lg">
-          We don&apos;t like to re-invent the wheel, neither should you. We
-          selected the most productive and established tools in the scene and
-          build Saas UI on top of it.
+        Découvrez notre vision d&apos;une plateforme qui simplifie la gestion des aéro-club. Notre objectif est de créer un outil intuitif qui facilite les réservations, la planification et les paiements, tout en optimisant le temps des instructeurs et des membres. Rejoignez-nous dans cette aventure et aidez-nous à façonner l&apos;avenir des aéro-club !
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
-        name="Renata Alink"
-        description="Founder"
+        name="Vol-évasion avec JP-développement"
+        description="Fondateur"
         avatar="/static/images/avatar.jpg"
         gradient={["pink.200", "purple.500"]}
       >
-        “Saas UI helped us set up a beautiful modern UI in no time. It saved us
-        hundreds of hours in development time and allowed us to focus on
-        business logic for our specific use-case from the start.”
+        Grâce à l’expertise combinée de notre équipe web et d’un aéroclub de l’Est de la France, nous développons une application sur mesure pour les aéroclubs, avec des fonctionnalités spécifiques et une expérience utilisateur adaptée aux réalités du terrain.
       </HighlightsTestimonialItem>
       <HighlightsItem
         colSpan={[1, null, 2]}
-        title="Start your next idea two steps ahead"
+        title=" Pourquoi notre projet est unique"
       >
         <Text color="muted" fontSize="lg">
-          We took care of all your basic frontend needs, so you can start
-          building functionality that makes your product unique.
+        Ce qui distingue notre application des autres, c’est notre approche unique : un partenariat solide entre des experts en développement web et un aéroclub expérimenté. Cette collaboration nous permet de comprendre en profondeur les besoins des aéro-club et de créer une solution sur mesure. Avec une équipe engagée sur tous les aspects, de la technologie à l’expérience terrain
         </Text>
-        <Wrap mt="8">
+        {/* <Wrap mt="8">
           {[
             "authentication",
             "navigation",
@@ -294,7 +280,7 @@ const HighlightsSection = () => {
               {value}
             </Tag>
           ))}
-        </Wrap>
+        </Wrap> */}
       </HighlightsItem>
     </Highlights>
   );
@@ -311,16 +297,13 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Not your standard
-          <Br /> dashboard template.
+          Fonctionnalités Clés de 
+          <Br /> Notre Application pour les Aéroclubs
         </Heading>
       }
       description={
         <>
-          Saas UI Pro includes everything you need to build modern frontends.
-          <Br />
-          Use it as a template for your next product or foundation for your
-          design system.
+          Notre application simplifie la gestion des aéroclubs avec des fonctionnalités conçues pour répondre aux besoins spécifiques des instructeurs, des élèves, et des gestionnaires.
         </>
       }
       align="left"
@@ -328,73 +311,68 @@ const FeaturesSection = () => {
       iconSize={4}
       features={[
         {
-          title: "Components.",
-          icon: FiBox,
+          title: "Calendrier.",
+          icon: FaCalendar,
           description:
-            "All premium components are available on a private NPM registery, no more copy pasting and always up-to-date.",
+            "Planifiez et gérez facilement les réservations de vols, cours et événements avec un calendrier intuitif.",
           variant: "inline",
         },
         {
-          title: "Starterkits.",
-          icon: FiLock,
+          title: "Suivi des disponibilités.",
+          icon: FiClock,
           description:
-            "Example apps in Next.JS, Electron. Including authentication, billing, example pages, everything you need to get started FAST.",
+            "Les instructeurs peuvent indiquer leurs disponibilités en temps réel, facilitant la planification et les inscriptions.",
           variant: "inline",
         },
         {
-          title: "Documentation.",
-          icon: FiSearch,
+          title: "Gestion des élèves.",
+          icon: GiNotebook,
           description:
-            "Extensively documented, including storybooks, best practices, use-cases and examples.",
+            "Suivi des progrès des élèves, gestion des inscriptions et des communications en un seul endroit.",
           variant: "inline",
         },
         {
-          title: "Onboarding.",
-          icon: FiUserPlus,
+          title: "Paiement en ligne sécurisé.",
+          icon: FaMoneyBill,
           description:
-            "Add user onboarding flows, like tours, hints and inline documentation without breaking a sweat.",
+            "Intégration de solutions de paiement sécurisées pour faciliter les transactions et les abonnements.",
           variant: "inline",
         },
         {
-          title: "Feature flags.",
-          icon: FiFlag,
+          title: "Location d’ULM.",
+          icon: FaPlaneArrival,
           description:
-            "Implement feature toggles for your billing plans with easy to use hooks. Connect Flagsmith, or other remote config services once you're ready.",
+            "Gérez les réservations et la disponibilité des ULM pour les locations avec une interface claire et simple.",
           variant: "inline",
         },
         {
-          title: "Upselling.",
-          icon: FiTrendingUp,
+          title: "Rapports et statistiques.",
+          icon: VscGraphLine,
           description:
-            "Components and hooks for upgrade flows designed to make upgrading inside your app frictionless.",
+            "Accédez à des rapports détaillés sur les réservations, les paiements et les performances pour une meilleure gestion.",
           variant: "inline",
         },
         {
-          title: "Themes.",
-          icon: FiToggleLeft,
+          title: "Historique des vols.",
+          icon: FaHistory,
           description:
-            "Includes multiple themes with darkmode support, always have the perfect starting point for your next project.",
+            "Consultez un historique détaillé des vols et des sessions de formation pour un suivi précis des activités et des performances.",
           variant: "inline",
         },
         {
-          title: "Generators.",
-          icon: FiTerminal,
+          title: "Plateforme mobile.",
+          icon: FaMobile,
           description:
-            "Extend your design system while maintaininig code quality and consistency with built-in generators.",
+            "Accédez à toutes les fonctionnalités de l’application depuis votre smartphone pour une gestion facile et flexible en déplacement.",
           variant: "inline",
         },
         {
-          title: "Monorepo.",
-          icon: FiCode,
-          description: (
-            <>
-              All code is available as packages in a high-performance{" "}
-              <Link href="https://turborepo.com">Turborepo</Link>, you have full
-              control to modify and adjust it to your workflow.
-            </>
-          ),
+          title: "Outils de communication intégrés.",
+          icon: FiMessageSquare,
+          description:
+            "Facilitez la communication entre instructeurs, élèves et membres du club avec des outils de messagerie et de notifications intégrés.",
           variant: "inline",
-        },
+        }
       ]}
     />
   );
