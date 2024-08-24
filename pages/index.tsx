@@ -17,6 +17,12 @@ import {
   IconButton,
   VStack,
   Flex,
+  FormControl,
+  FormHelperText,
+  FormLabel,
+  Input,
+  useToast,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { SEO } from "components/seo/seo";
 
@@ -85,6 +91,8 @@ const Home: NextPage = () => {
         {/* <TestimonialsSection /> */}
 
         {/* <PricingSection /> */}
+
+        <WaitlistSection /> {/* Ajoutez la section Waitlist ici */}
 
         <FaqSection />
       </Box>
@@ -422,6 +430,84 @@ const PricingSection = () => {
 const FaqSection = () => {
   return <Faq {...faq} />;
 };
+
+const WaitlistSection: React.FC = () => {
+  const [email, setEmail] = React.useState("");
+  const [loading, setLoading] = React.useState(false);
+  const toast = useToast();
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // Simulate API call
+    setTimeout(() => {
+      setLoading(false);
+      setEmail("");
+      toast({
+        title: "Inscription réussie.",
+        description: "Merci pour votre inscription. Vous serez informé dès que nous aurons plus d'informations.",
+        status: "success",
+        duration: 5000,
+        isClosable: true,
+      });
+    }, 1000);
+  };
+
+  return (
+    <Box py="20">
+    <Container maxW="container.xl">
+      <HStack spacing={10} align="flex-start" justify="space-between">
+        <Stack spacing={4} maxW="50%">
+          <Heading as="h2" size="xl" textAlign="left">
+            Rejoignez notre Waitlist
+          </Heading>
+          <Text fontSize="lg" color="gray.400" textAlign="left">
+            Inscrivez-vous pour être parmi les premiers informés lorsque notre application sera prête. La waitlist vous donnera un accès exclusif à des mises à jour et des offres spéciales.
+          </Text>
+        </Stack>
+        <Box
+          color={"#1D2025"}
+          as="form"
+          onSubmit={handleSubmit}
+          bg={useColorModeValue("white", "gray.800")}
+          p="8"
+          rounded="md"
+          shadow="md"
+          maxW="md"
+          borderRadius="md"
+          border="1px"
+          w="50%"
+        >
+          <FormControl id="email" isRequired>
+            <FormLabel color="white">Email</FormLabel>
+            <Input
+              borderRadius="md"
+              border="1px"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Entrez votre adresse e-mail"
+            />
+            <FormHelperText>
+              Ce n&apos;es pas une newsletter, c&apos;est une liste d&apos;inscription pour être informé lorsque nous aurons des mises à jour importantes.
+            </FormHelperText>
+          </FormControl>
+          <Button
+            mt="4"
+            colorScheme="primary"
+            type="submit"
+            isLoading={loading}
+          >
+            Inscrivez-vous
+          </Button>
+        </Box>
+      </HStack>
+    </Container>
+  </Box>
+);
+};
+
 
 export default Home;
 
