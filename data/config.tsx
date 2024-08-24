@@ -17,9 +17,9 @@ const siteConfig = {
     links: [
       {
         label: 'Suivre le projet',
-        href: '/waitlist',
+        id: "waitlist",
         variant: 'primary',
-        id: "1",
+        href: '',
       },
     ],
   },

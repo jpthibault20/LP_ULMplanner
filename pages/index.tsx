@@ -129,7 +129,7 @@ const HeroSection: React.FC = () => {
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/waitlist">
+                <ButtonLink colorScheme="primary" size="lg" href="/#waitlist">
                   Suivre le projet
                 </ButtonLink>
               </ButtonGroup>
@@ -455,7 +455,7 @@ const WaitlistSection: React.FC = () => {
   };
 
   return (
-    <Box py="20">
+    <Box py="20" id="waitlist">
     <Container maxW="container.xl">
       <HStack spacing={10} align="flex-start" justify="space-between">
         <Stack spacing={4} maxW="50%">
