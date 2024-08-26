@@ -238,11 +238,13 @@ const HighlightsSection = () => {
           </Flex>
         </VStack>
       </HighlightsItem>
+
       <HighlightsItem title="Notre vision pour les aéro-club">
         <Text color="muted" fontSize="lg">
           Découvrez notre vision d&apos;une plateforme qui simplifie la gestion des aéro-club. Notre objectif est de créer un outil intuitif qui facilite les réservations, la planification et les paiements, tout en optimisant le temps des instructeurs et des membres. Rejoignez-nous dans cette aventure et aidez-nous à façonner l&apos;avenir des aéro-club !
         </Text>
       </HighlightsItem>
+
       <HighlightsTestimonialItem
         name="Vol-évasion avec JP-développement"
         description="Fondateur"
@@ -251,6 +253,7 @@ const HighlightsSection = () => {
       >
         Grâce à l’expertise combinée de notre équipe web et d’un aéroclub de l’Est de la France, nous développons une application sur mesure pour les aéroclubs, avec des fonctionnalités spécifiques et une expérience utilisateur adaptée aux réalités du terrain.
       </HighlightsTestimonialItem>
+
       <HighlightsItem
         colSpan={[1, null, 2]}
         title=" Pourquoi notre projet est unique"
@@ -290,6 +293,7 @@ const HighlightsSection = () => {
           ))}
         </Wrap> */}
       </HighlightsItem>
+
     </Highlights>
   );
 };
