@@ -444,18 +444,40 @@ const WaitlistSection: React.FC = () => {
     e.preventDefault();
     setLoading(true);
 
-    // Simulate API call
-    setTimeout(() => {
-      setLoading(false);
-      setEmail("");
-      toast({
-        title: "Inscription réussie.",
-        description: "Merci pour votre inscription. Vous serez informé dès que nous aurons plus d'informations.",
-        status: "success",
-        duration: 5000,
-        isClosable: true,
+
+
+
+    try {
+      const response = await fetch('/api/mail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
       });
-    }, 1000);
+
+      setTimeout(() => {
+        setLoading(false);
+        setEmail("");
+        toast({
+          title: "Inscription réussie.",
+          description: "Merci pour votre inscription. Vous serez informé dès que nous aurons plus d'informations.",
+          status: "success",
+          duration: 5000,
+          isClosable: true,
+        });
+      }, 1000);
+    } catch (error) {
+      console.error('Erreur lors de la soumission du formulaire:', error);
+    }
+
+
+
+
+
+
+    // Simulate API call
+
   };
 
   return (
