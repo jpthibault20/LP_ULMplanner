@@ -1,113 +1,100 @@
 import { HStack, Text } from '@chakra-ui/react'
 
 export default {
-  title: 'Pricing for every stage',
+  title: 'Des formules flexibles pour chaque aéroclub',
   description:
-    'Pay once and get life-time access to our high quality components.',
+    'Que vous soyez un petit club ou une grande organisation, nous avons une formule adaptée à vos besoins et à votre budget.',
   plans: [
     {
-      id: 'oss',
-      title: 'Open Source',
-      description: 'Basic compoents, perfect to get started.',
-      price: 'Free',
+      id: 'free',
+      title: 'Offre de découverte',
+      description: 'Une offre pour vous permettre de tester notre application.',
+      price: 'Gratuit',
       features: [
         {
-          title: 'MIT License',
+          title: "1 semaine d'accès complet à toutes les fonctionnalités",
         },
         {
-          title: 'Authentication (Clerk/Supabase/Magic)',
+          title: "5 heures réservables par mois après l'essai",
         },
         {
-          title: 'Form (react-hook-form)',
-        },
-        {
-          title: 'Modals manager',
-        },
-        {
-          title: 'Hotkeys',
-        },
-        {
-          title: 'Web3 components',
-        },
-        {
-          title: 'And much more...',
+          title: "Accès au calendrier de réservations instructeur/élèves",
         },
       ],
       action: {
-        href: '#',
+        href: '',
       },
     },
     {
-      id: 'bootstrap',
-      title: 'Bootstrap',
-      description: 'Complete frontend stack for bootstrappers and small teams.',
-      price: 'Free',
+      id: 'essentiel',
+      title: "L'essentiel",
+      description: 'Une offre essentielle mais pas moins efficace.',
+      price: '2€ / heure réservée',
       isRecommended: true,
       features: [
         {
-          title: 'One project',
+          title: "Accès au calendrier instructeur/élève",
         },
         {
-          title: 'One developer',
+          title: "Paiement en ligne sécurisé ",
         },
         {
-          title: 'Advanced components',
+          title: "Frais de paiment en ligne compris dans l'offre",
         },
         {
-          title: 'Multiple themes',
+          title: "modue location",
         },
         {
-          title: 'Next.js and Electron boilerplates',
+          title: "Calendrier location machines",
         },
         {
-          title: 'Private discord community',
-        },
-        {
-          title: '1 year of updates',
+          title: "Accès sur mobile et desktop",
         },
         null,
         {
-          title: 'Private beta access',
+          title: 'Recherche beta testeur pour cette offre',
           iconColor: 'green.500',
         },
       ],
       action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Single%20license',
+        href: '#waitlist',
+        label: "Devenir beta testeur"
       },
     },
     {
-      id: 'startup',
-      title: 'Startup',
-      description: 'Unlimited license for growing teams.',
-      price: (
-        <HStack>
-          <Text textDecoration="line-through" fontSize="sm" color="gray.400">
-            €999,-
-          </Text>
-          <Text>€499,-</Text>
-        </HStack>
-      ),
+      id: 'prenium',
+      title: 'La prenium',
+      description: 'Une offre complète les clubs les plus exigeants.',
+      price: '3,50€ / heure réservée',
       features: [
         {
-          title: 'Unlimited projects',
+          title: "Tous ce qui es compris dans l'offre essentiel",
         },
         {
-          title: 'Unlimited developers',
+          title: "Chat instructeur/élèves",
         },
         {
-          title: '1 year of updates',
+          title: "Suivi personnalisé des élèves",
         },
         {
-          title: 'Everything from Bootstrap',
+          title: "Gestion des élèves ",
         },
+        {
+          title: "suivi des locations",
+        },
+        {
+          title: "suivi des machines",
+        },
+
         null,
         {
-          title: 'Private beta access',
+          title: 'Recherche beta testeur pour cette offre',
           iconColor: 'green.500',
         },
       ],
       action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Unlimited%20license',
+        href: '#waitlist',
+        label: "Devenir beta testeur"
       },
     },
   ],

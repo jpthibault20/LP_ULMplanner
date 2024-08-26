@@ -425,7 +425,7 @@ const PricingSection = () => {
   return (
     <Pricing {...pricing}>
       <Text p="8" textAlign="center" color="muted">
-        VAT may be applicable depending on your location.
+        Les offres seront ajuster une fois le projet lancé.
       </Text>
     </Pricing>
   );
@@ -461,13 +461,18 @@ const WaitlistSection: React.FC = () => {
   return (
     <Box py="20" id="waitlist">
       <Container maxW="container.xl">
-        <HStack spacing={10} align="flex-start" justify="space-between">
-          <Stack spacing={4} maxW="50%">
+        <Stack
+          direction={{ base: "column", md: "row" }} // Stack en colonne sur les petits écrans, en ligne sur les écrans moyens et grands
+          spacing={10}
+          align={{ base: "stretch", md: "flex-start" }} // Alignement des enfants pour les petits écrans (étirés), ajustement sur les plus grands
+          justify="space-between"
+        >
+          <Stack spacing={4} maxW={{ base: "100%", md: "50%" }}> {/* Ajustement de la largeur pour les petits écrans */}
             <Heading as="h2" size="xl" textAlign="left">
-              Rejoignez notre Waitlist
+              Rejoignez notre liste de beta testeur
             </Heading>
             <Text fontSize="lg" color="gray.400" textAlign="left">
-              Inscrivez-vous pour être parmi les premiers informés lorsque notre application sera prête. La waitlist vous donnera un accès exclusif à des mises à jour et des offres spéciales.
+              Inscrivez-vous pour être parmi les premiers informés lorsque notre application sera prête. La liste d&apos;attente vous donnera un accès exclusif à la première version de notre application.
             </Text>
           </Stack>
           <Box
@@ -481,7 +486,7 @@ const WaitlistSection: React.FC = () => {
             maxW="md"
             borderRadius="md"
             border="1px"
-            w="50%"
+            w={{ base: "100%", md: "50%" }} // Utilisation de w="100%" sur petits écrans
           >
             <FormControl id="email" isRequired>
               <FormLabel color="white">Email</FormLabel>
@@ -494,7 +499,7 @@ const WaitlistSection: React.FC = () => {
                 placeholder="Entrez votre adresse e-mail"
               />
               <FormHelperText>
-                Ce n&apos;es pas une newsletter, c&apos;est une liste d&apos;inscription pour être informé lorsque nous aurons des mises à jour importantes.
+                Ce n&apos;est pas une newsletter, c&apos;est une liste d&apos;inscription pour être informé lorsque nous aurons des mises à jour importantes.
               </FormHelperText>
             </FormControl>
             <Button
@@ -506,7 +511,7 @@ const WaitlistSection: React.FC = () => {
               Inscrivez-vous
             </Button>
           </Box>
-        </HStack>
+        </Stack>
       </Container>
     </Box>
   );

@@ -51,12 +51,12 @@ export const Pricing: React.FC<PricingProps> = (props) => {
               sx={
                 plan.isRecommended
                   ? {
+                    borderColor: "primary.500",
+                    _dark: {
                       borderColor: "primary.500",
-                      _dark: {
-                        borderColor: "primary.500",
-                        bg: "blackAlpha.300",
-                      },
-                    }
+                      bg: "blackAlpha.300",
+                    },
+                  }
                   : {}
               }
             >
@@ -69,9 +69,15 @@ export const Pricing: React.FC<PricingProps> = (props) => {
                   )
                 )}
               </PricingFeatures>
-              <ButtonLink colorScheme="primary" {...plan.action}>
+              {
+                plan.action.href ?
+                  <ButtonLink colorScheme="primary" {...plan.action}>
+                    {plan.action.label || "..."}
+                  </ButtonLink> : null
+              }
+              {/* <ButtonLink colorScheme="primary" {...plan.action}>
                 {plan.action.label || "Sign Up"}
-              </ButtonLink>
+              </ButtonLink> */}
             </PricingBox>
           ))}
         </SimpleGrid>
