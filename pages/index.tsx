@@ -90,7 +90,7 @@ const Home: NextPage = () => {
 
         {/* <TestimonialsSection /> */}
 
-        {/* <PricingSection /> */}
+        <PricingSection />
 
         <WaitlistSection /> {/* Ajoutez la section Waitlist ici */}
 
@@ -148,7 +148,7 @@ const HeroSection: React.FC = () => {
               <Box overflow="hidden" height="100%">
                 <Image
                   src="/static/screenshots/list.png"
-                  layout="fixed"
+                  // layout="fixed"
                   width={1200}
                   height={762}
                   alt="Screenshot of a ListPage in Saas UI Pro"
@@ -214,7 +214,7 @@ const HighlightsSection = () => {
       <HighlightsItem colSpan={[1, null, 2]} title="Participez à notre développement et soyez récompensé !">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-          Nous sommes en pleine phase de développement de notre application dédiée aux éro-club. À ce stade, nous n’avons pas encore de produit final à proposer, mais votre avis est essentiel pour créer une solution qui répond à vos besoins. En participant à notre enquête, vous contribuez à façonner notre outil et, en remerciement, vous recevrez des récompenses exclusives une fois l’application lancée !<br />  Cliquez sur le lien ci-dessous pour répondre à notre questionnaire et partager vos idées
+            Nous sommes en pleine phase de développement de notre application dédiée aux éro-club. À ce stade, nous n’avons pas encore de produit final à proposer, mais votre avis est essentiel pour créer une solution qui répond à vos besoins. En participant à notre enquête, vous contribuez à façonner notre outil et, en remerciement, vous recevrez des récompenses exclusives une fois l’application lancée !<br />  Cliquez sur le lien ci-dessous pour répondre à notre questionnaire et partager vos idées
           </Text>
 
           <Flex
@@ -234,13 +234,13 @@ const HighlightsSection = () => {
                 Lien de notre questionnaire
               </Text>{" "}
             </Box>
-            
+
           </Flex>
         </VStack>
       </HighlightsItem>
       <HighlightsItem title="Notre vision pour les aéro-club">
         <Text color="muted" fontSize="lg">
-        Découvrez notre vision d&apos;une plateforme qui simplifie la gestion des aéro-club. Notre objectif est de créer un outil intuitif qui facilite les réservations, la planification et les paiements, tout en optimisant le temps des instructeurs et des membres. Rejoignez-nous dans cette aventure et aidez-nous à façonner l&apos;avenir des aéro-club !
+          Découvrez notre vision d&apos;une plateforme qui simplifie la gestion des aéro-club. Notre objectif est de créer un outil intuitif qui facilite les réservations, la planification et les paiements, tout en optimisant le temps des instructeurs et des membres. Rejoignez-nous dans cette aventure et aidez-nous à façonner l&apos;avenir des aéro-club !
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
@@ -256,7 +256,7 @@ const HighlightsSection = () => {
         title=" Pourquoi notre projet est unique"
       >
         <Text color="muted" fontSize="lg">
-        Ce qui distingue notre application des autres, c’est notre approche unique : un partenariat solide entre des experts en développement web et un aéroclub expérimenté. Cette collaboration nous permet de comprendre en profondeur les besoins des aéro-club et de créer une solution sur mesure. Avec une équipe engagée sur tous les aspects, de la technologie à l’expérience terrain
+          Ce qui distingue notre application des autres, c’est notre approche unique : un partenariat solide entre des experts en développement web et un aéroclub expérimenté. Cette collaboration nous permet de comprendre en profondeur les besoins des aéro-club et de créer une solution sur mesure. Avec une équipe engagée sur tous les aspects, de la technologie à l’expérience terrain
         </Text>
         {/* <Wrap mt="8">
           {[
@@ -305,7 +305,7 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Fonctionnalités Clés de 
+          Fonctionnalités Clés de
           <Br /> Notre Application pour les Aéroclubs
         </Heading>
       }
@@ -456,56 +456,56 @@ const WaitlistSection: React.FC = () => {
 
   return (
     <Box py="20" id="waitlist">
-    <Container maxW="container.xl">
-      <HStack spacing={10} align="flex-start" justify="space-between">
-        <Stack spacing={4} maxW="50%">
-          <Heading as="h2" size="xl" textAlign="left">
-            Rejoignez notre Waitlist
-          </Heading>
-          <Text fontSize="lg" color="gray.400" textAlign="left">
-            Inscrivez-vous pour être parmi les premiers informés lorsque notre application sera prête. La waitlist vous donnera un accès exclusif à des mises à jour et des offres spéciales.
-          </Text>
-        </Stack>
-        <Box
-          color={"#1D2025"}
-          as="form"
-          onSubmit={handleSubmit}
-          bg={useColorModeValue("white", "gray.800")}
-          p="8"
-          rounded="md"
-          shadow="md"
-          maxW="md"
-          borderRadius="md"
-          border="1px"
-          w="50%"
-        >
-          <FormControl id="email" isRequired>
-            <FormLabel color="white">Email</FormLabel>
-            <Input
-              borderRadius="md"
-              border="1px"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Entrez votre adresse e-mail"
-            />
-            <FormHelperText>
-              Ce n&apos;es pas une newsletter, c&apos;est une liste d&apos;inscription pour être informé lorsque nous aurons des mises à jour importantes.
-            </FormHelperText>
-          </FormControl>
-          <Button
-            mt="4"
-            colorScheme="primary"
-            type="submit"
-            isLoading={loading}
+      <Container maxW="container.xl">
+        <HStack spacing={10} align="flex-start" justify="space-between">
+          <Stack spacing={4} maxW="50%">
+            <Heading as="h2" size="xl" textAlign="left">
+              Rejoignez notre Waitlist
+            </Heading>
+            <Text fontSize="lg" color="gray.400" textAlign="left">
+              Inscrivez-vous pour être parmi les premiers informés lorsque notre application sera prête. La waitlist vous donnera un accès exclusif à des mises à jour et des offres spéciales.
+            </Text>
+          </Stack>
+          <Box
+            color={"#1D2025"}
+            as="form"
+            onSubmit={handleSubmit}
+            bg={useColorModeValue("white", "gray.800")}
+            p="8"
+            rounded="md"
+            shadow="md"
+            maxW="md"
+            borderRadius="md"
+            border="1px"
+            w="50%"
           >
-            Inscrivez-vous
-          </Button>
-        </Box>
-      </HStack>
-    </Container>
-  </Box>
-);
+            <FormControl id="email" isRequired>
+              <FormLabel color="white">Email</FormLabel>
+              <Input
+                borderRadius="md"
+                border="1px"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Entrez votre adresse e-mail"
+              />
+              <FormHelperText>
+                Ce n&apos;es pas une newsletter, c&apos;est une liste d&apos;inscription pour être informé lorsque nous aurons des mises à jour importantes.
+              </FormHelperText>
+            </FormControl>
+            <Button
+              mt="4"
+              colorScheme="primary"
+              type="submit"
+              isLoading={loading}
+            >
+              Inscrivez-vous
+            </Button>
+          </Box>
+        </HStack>
+      </Container>
+    </Box>
+  );
 };
 
 
