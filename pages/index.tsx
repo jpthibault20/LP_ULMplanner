@@ -517,6 +517,7 @@ const WaitlistSection: React.FC = () => {
                 border="1px"
                 type="email"
                 value={email}
+                color={useColorModeValue("gray.700", "white")}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Entrez votre adresse e-mail"
               />
