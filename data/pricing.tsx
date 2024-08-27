@@ -30,7 +30,7 @@ export default {
       title: "L'essentiel",
       description: 'Une offre essentielle mais pas moins efficace.',
       price: '3€ / heure réservée',
-      isRecommended: true,
+
       features: [
         {
           title: "Accès au calendrier instructeur/élève",
@@ -69,6 +69,7 @@ export default {
       title: 'La prenium',
       description: 'Une offre complète les clubs les plus exigeants.',
       price: "5€ / heure réservée",
+      isRecommended: true,
       features: [
         {
           title: "Tous ce qui es compris dans l'offre essentiel",
