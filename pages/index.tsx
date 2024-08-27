@@ -511,7 +511,7 @@ const WaitlistSection: React.FC = () => {
             w={{ base: "100%", md: "50%" }} // Utilisation de w="100%" sur petits écrans
           >
             <FormControl id="email" isRequired>
-              <FormLabel color="white">Email</FormLabel>
+              <FormLabel color={useColorModeValue("gray.700", "white")}>Email</FormLabel>
               <Input
                 borderRadius="md"
                 border="1px"
