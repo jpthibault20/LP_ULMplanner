@@ -29,7 +29,7 @@ export default {
       id: 'essentiel',
       title: "L'essentiel",
       description: 'Une offre essentielle mais pas moins efficace.',
-      price: '2€ / heure réservée',
+      price: '3€ / heure réservée',
       isRecommended: true,
       features: [
         {
@@ -50,6 +50,9 @@ export default {
         {
           title: "Accès sur mobile et desktop",
         },
+        {
+          title: "Sans engagement",
+        },
         null,
         {
           title: 'Recherche beta testeur pour cette offre',
@@ -65,7 +68,7 @@ export default {
       id: 'prenium',
       title: 'La prenium',
       description: 'Une offre complète les clubs les plus exigeants.',
-      price: '3,50€ / heure réservée',
+      price: "5€ / heure réservée",
       features: [
         {
           title: "Tous ce qui es compris dans l'offre essentiel",
@@ -85,7 +88,9 @@ export default {
         {
           title: "suivi des machines",
         },
-
+        {
+          title: "Sans engagement",
+        },
         null,
         {
           title: 'Recherche beta testeur pour cette offre',
