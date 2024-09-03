@@ -6,7 +6,7 @@ const faq = {
   items: [
     {
       q: "Quand l'application sera-t-elle disponible ?",
-      a: "Nous sommes en pleine phase de développement, concentrés sur la création d'une application qui répondra parfaitement à vos besoins. Bien que nous ne puissions pas encore préciser une date de lancement, nous vous encourageons à vous inscrire dès maintenant sur notre liste d'attente. Vous serez parmi les premiers informés lorsque nous serons prêts à lancer notre solution innovante !",
+      a: "Nous sommes actuellement en pleine phase de développement, avec pour objectif de créer une application qui répondra parfaitement à vos besoins. Notre équipe travaille avec diligence pour vous offrir la meilleure expérience possible. Nous prévoyons de lancer l'application pour la saison 2025. En attendant, nous vous encourageons à vous inscrire dès maintenant sur notre liste d'attente pour être parmi les premiers à être informés et à accéder à notre solution innovante dès sa sortie !",
     },
     {
       q: "Comment puis-je participer à l'élaboration de l'application ?",
