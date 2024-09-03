@@ -15,7 +15,7 @@ export default {
           title: "1 semaine d'accès complet à toutes les fonctionnalités",
         },
         {
-          title: "5 heures réservables par mois après l'essai",
+          title: "5 réservation par mois après l'essai",
         },
         {
           title: "Accès au calendrier de réservations instructeur/élèves",
