@@ -351,10 +351,10 @@ const FeaturesSection = () => {
           variant: "inline",
         },
         {
-          title: "Location d’ULM.",
+          title: "Location",
           icon: FaPlaneArrival,
           description:
-            "Gérez les réservations et la disponibilité des ULM pour les locations avec une interface claire et simple.",
+            "Gérez les réservations et la disponibilité des machines pour les locations avec une interface claire et simple.",
           variant: "inline",
         },
         {
