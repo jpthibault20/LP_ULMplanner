@@ -15,7 +15,7 @@ export default {
           title: "1 semaine d'accès complet à toutes les fonctionnalités",
         },
         {
-          title: "5 heures réservables par mois après l'essai",
+          title: "5 réservation par mois après l'essai",
         },
         {
           title: "Accès au calendrier de réservations instructeur/élèves",
@@ -29,7 +29,7 @@ export default {
       id: 'essentiel',
       title: "L'essentiel",
       description: 'Une offre essentielle mais pas moins efficace.',
-      price: '3€ / heure réservée',
+      price: '3€ / réservation',
 
       features: [
         {
@@ -68,7 +68,7 @@ export default {
       id: 'prenium',
       title: 'La prenium',
       description: 'Une offre complète les clubs les plus exigeants.',
-      price: "5€ / heure réservée",
+      price: "5€ / réservation",
       isRecommended: true,
       features: [
         {

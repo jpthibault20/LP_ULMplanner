@@ -491,11 +491,12 @@ const WaitlistSection: React.FC = () => {
         >
           <Stack spacing={4} maxW={{ base: "100%", md: "50%" }}> {/* Ajustement de la largeur pour les petits écrans */}
             <Heading as="h2" size="xl" textAlign="left">
-              Rejoignez notre liste de beta testeur
+              Rejoignez nous pour la saison 2025
             </Heading>
             <Text fontSize="lg" color="gray.400" textAlign="left">
-              Inscrivez-vous pour être parmi les premiers informés lorsque notre application sera prête. La liste d&apos;attente vous donnera un accès exclusif à la première version de notre application.
-            </Text>
+  Inscrivez-vous pour être parmi les premiers informés lorsque notre application sera prête. La liste d&apos;attente vous donnera un accès exclusif à la première version de notre application prévue pour la <strong>saison 2025</strong>.
+</Text>
+
           </Stack>
           <Box
             color={"#1D2025"}
