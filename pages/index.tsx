@@ -130,7 +130,7 @@ const HeroSection: React.FC = () => {
 
               <ButtonGroup spacing={4} alignItems="center">
                 <ButtonLink colorScheme="primary" size="lg" href="/#waitlist">
-                  Suivre le projet
+                  Je suis intéressé
                 </ButtonLink>
               </ButtonGroup>
             </FallInPlace>
@@ -494,8 +494,8 @@ const WaitlistSection: React.FC = () => {
               Rejoignez nous pour la saison 2025
             </Heading>
             <Text fontSize="lg" color="gray.400" textAlign="left">
-  Inscrivez-vous pour être parmi les premiers informés lorsque notre application sera prête. La liste d&apos;attente vous donnera un accès exclusif à la première version de notre application prévue pour la <strong>saison 2025</strong>.
-</Text>
+              Inscrivez-vous pour être parmi les premiers informés lorsque notre application sera prête. La liste d&apos;attente vous donnera un accès exclusif à la première version de notre application prévue pour la <strong>saison 2025</strong>.
+            </Text>
 
           </Stack>
           <Box

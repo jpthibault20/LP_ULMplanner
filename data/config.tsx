@@ -16,7 +16,7 @@ const siteConfig = {
   header: {
     links: [
       {
-        label: 'Suivre le projet',
+        label: 'Je suis intéressé',
         id: "waitlist",
         variant: 'primary',
         href: '',
