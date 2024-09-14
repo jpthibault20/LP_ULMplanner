@@ -29,7 +29,7 @@ export default {
       id: 'essentiel',
       title: "L'essentiel",
       description: 'Une offre essentielle mais pas moins efficace.',
-      price: '2€ / réservation',
+      price: '1€ / réservation',
 
       features: [
         {
@@ -68,7 +68,7 @@ export default {
       id: 'prenium',
       title: 'La prenium',
       description: 'Une offre complète les clubs les plus exigeants.',
-      price: "4€ / réservation",
+      price: "3€ / réservation",
       isRecommended: true,
       features: [
         {
