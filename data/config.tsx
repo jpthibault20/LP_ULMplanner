@@ -16,10 +16,10 @@ const siteConfig = {
   header: {
     links: [
       {
-        label: 'Je suis intéressé',
+        label: 'login',
         id: "waitlist",
         variant: 'primary',
-        href: '',
+        href: 'https://aeroconnect-saas.vercel.app',
       },
     ],
   },
