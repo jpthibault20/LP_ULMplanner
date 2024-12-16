@@ -78,7 +78,7 @@ const Home: NextPage = () => {
   return (
     <Box>
       <SEO
-        title="AeroClubConnect"
+        title="AeroConnect"
         description=""
       />
       <Box>
