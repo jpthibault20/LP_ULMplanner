@@ -9,7 +9,8 @@ export default {
       id: 'free',
       title: 'Offre de découverte',
       description: 'Une offre pour vous permettre de tester notre application.',
-      price: 'Gratuit',
+      price: 'prix à venir',
+      isRecommended: true,
       features: [
         {
           title: "30 jours d'accès complet à toutes les fonctionnalités",
@@ -29,8 +30,8 @@ export default {
       id: 'essentiel',
       title: "L'essentiel",
       description: 'Une offre essentielle mais pas moins efficace.',
-      price: '1€ / réservation',
-
+      price: 'prix à venir',
+      isRecommended: true,
       features: [
         {
           title: "Accès au calendrier instructeur/élève",
@@ -68,7 +69,7 @@ export default {
       id: 'prenium',
       title: 'La prenium',
       description: 'Une offre complète les clubs les plus exigeants.',
-      price: "3€ / réservation",
+      price: 'prix à venir',
       isRecommended: true,
       features: [
         {
