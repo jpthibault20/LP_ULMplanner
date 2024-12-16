@@ -19,7 +19,7 @@ const siteConfig = {
         label: 'login',
         id: "waitlist",
         variant: 'primary',
-        href: 'https://aeroconnect-saas.vercel.app',
+        href: 'https://app.aeroconnect.fr',
       },
     ],
   },

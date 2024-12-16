@@ -494,47 +494,16 @@ const WaitlistSection: React.FC = () => {
               Rejoignez nous pour la saison 2025
             </Heading>
             <Text fontSize="lg" color="gray.400" textAlign="left">
-              Inscrivez-vous pour être parmi les premiers informés lorsque notre application sera prête. La liste d&apos;attente vous donnera un accès exclusif à la première version de notre application prévue pour la <strong>saison 2025</strong>.
-            </Text>
+              Contactez-nous pour être parmi les premiers informés lorsque notre application sera prête. Rejoindre notre liste d&apos;attente vous offrira un accès exclusif à la première version de notre application, prévue pour la <strong>saison 2025</strong>.            </Text>
 
           </Stack>
-          <Box
-            color={"#1D2025"}
-            as="form"
-            onSubmit={handleSubmit}
-            bg={useColorModeValue("white", "gray.800")}
-            p="8"
-            rounded="md"
-            shadow="md"
-            maxW="md"
-            borderRadius="md"
-            border="1px"
-            w={{ base: "100%", md: "50%" }} // Utilisation de w="100%" sur petits écrans
+          <Link
+            href="mailto:thibault@jp-developpement.com"
+            fontWeight="bold"
+            _hover={{ textDecoration: "underline" }}
           >
-            <FormControl id="email" isRequired>
-              <FormLabel color={useColorModeValue("gray.700", "white")}>Email</FormLabel>
-              <Input
-                borderRadius="md"
-                border="1px"
-                type="email"
-                value={email}
-                color={useColorModeValue("gray.700", "white")}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Entrez votre adresse e-mail"
-              />
-              <FormHelperText>
-                Ce n&apos;est pas une newsletter, c&apos;est une liste d&apos;inscription pour être informé lorsque nous aurons des mises à jour importantes.
-              </FormHelperText>
-            </FormControl>
-            <Button
-              mt="4"
-              colorScheme="primary"
-              type="submit"
-              isLoading={loading}
-            >
-              Inscrivez-vous
-            </Button>
-          </Box>
+            thibault@jp-developpement.com
+          </Link>
         </Stack>
       </Container>
     </Box>
